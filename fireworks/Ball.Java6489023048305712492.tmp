@@ -1,0 +1,53 @@
+class Ball() {
+  private float x;
+  private float y;
+  private float diameter;
+  
+  private color c;
+  
+  private float xSpeed;
+  private float ySpeed;
+  
+  private float gravity;
+
+  private static float ballCount = 2;
+  private static float maxdiameter= 5;
+
+  public Ball(float x, float y, float diameter) {
+    this.x = x;
+    this.y = y;
+    this.c = color( int(random(255)), int(random(255)), int(random(255)));
+    this. diameter= random(diameter*1/50);
+    this.xSpeed = random(-5, 5);
+    this.ySpeed = random(-5, 5);
+    this.gravity = 0.5;
+  }
+
+  public float getX() {
+    return x;
+  }
+  public float getY() {
+    return y;
+  }
+  public float getC() {
+    return c;
+  }
+  public float getxSpeed() {
+    return xSpeed;
+  }
+  public float getySpeed() {
+    return ySpeed;
+  }
+  public float getGravity() {
+    return gravity;
+  }
+  public float getDiameter() {
+    return diameter;
+  }
+  public float getballCount() {
+    return ballCount;
+  }
+  public float getmaxRadius() {
+    return maxRadius;
+  }
+}
