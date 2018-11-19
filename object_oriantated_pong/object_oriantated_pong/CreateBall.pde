@@ -1,5 +1,12 @@
 void CreateBalls() {
-  for (int i = 0; i < ball.length; i++) {
-    ball[i] = new Ball(300.0, 300.0, 10, random(-5, 5), random(-5, 5));
+  float ballX = 300;
+  float ballY = 300;
+  float radius = 10;
+  float xSpeed = random(-5, 5);
+  float ySpeed = random(-5, 5);
+
+    for (int i = 0; i < ball.length; i++) {
+    ball[i] = new Ball(ballX, ballY, radius, xSpeed, ySpeed);
+    ballX = 210;
   }
-} 
+}

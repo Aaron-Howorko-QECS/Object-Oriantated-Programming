@@ -1,11 +1,11 @@
 class Ball {
-
   private float x;
   private float y;
   private float radius;
   private float xSpeed;
   private float ySpeed;
 
+  public static boolean [] keys = new boolean[4];
 
   public Ball (float x, float y, float radius, float xSpeed, float ySpeed) {
     this.x = x;
@@ -32,7 +32,21 @@ class Ball {
     if (y >= 585) {
       ySpeed *= -1;
     }
+    if (x - radius <= leftPaddle.getX() + leftPaddle.getWidth() ) {
+      
+    }
+    if (x <= 15) {
+      x = 300;
+      y = 300;
+    }
+    if (x >= 585) {
+      x = 300;
+      y = 300;
+    }
   }
+
+
+
 
 
   public float getX() {
