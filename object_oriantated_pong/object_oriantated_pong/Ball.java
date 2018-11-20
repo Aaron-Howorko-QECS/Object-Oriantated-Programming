@@ -32,8 +32,11 @@ class Ball {
     if (y >= 585) {
       ySpeed *= -1;
     }
-    if (x - radius <= leftPaddle.getX() + leftPaddle.getWidth() ) {
-      
+    if (x + radius >= leftPaddle.getX() && x - radius <= leftPaddle.getX() + leftPaddle.getWidth() && y >= leftPaddle.getY() && y <= leftPaddle.getY() + leftPaddle.getHeight()) {
+      xSpeed *= -1;
+    }
+    if (x + radius >= rightPaddle.getX() && x- radius <= rightPaddle.getX() + rightPaddle.getWidth() && y >= rightPaddle.getY() && y <= rightPaddle.getY() + rightPaddle.getHeight()) {
+      xSpeed *= -1;
     }
     if (x <= 15) {
       x = 300;

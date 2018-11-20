@@ -1,8 +1,8 @@
 class rightPaddle {
   private static float x;
   private static float y;
-  private float paddleWidth;
-  private float paddleHeight;
+  private static float paddleWidth;
+  private static float paddleHeight;
   float speed;
 
   private static int paddleCount = 1;
@@ -36,10 +36,10 @@ class rightPaddle {
   public static float getY() {
     return y;
   }
-  public float getWidth() {
+  public static float getWidth() {
     return paddleWidth;
   }
-  public float getHeight() {
+  public static float getHeight() {
     return paddleHeight;
   }
   public static int getPaddleCount() {
