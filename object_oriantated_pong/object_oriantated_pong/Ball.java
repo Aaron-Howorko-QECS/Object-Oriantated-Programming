@@ -41,16 +41,20 @@ class Ball {
     if (x <= 15) {
       x = 300;
       y = 300;
+      object_oriantated_pong.scoreNum[1] ++;
+      score();
     }
     if (x >= 585) {
       x = 300;
       y = 300;
+      object_oriantated_pong.scoreNum[1] ++;
+      score();
     }
   }
 
-
-
-
+  public void score() {
+    System.out.println("p1 score" + object_oriantated_pong.scoreNum[0] + " p2 score" + object_oriantated_pong.scoreNum[1]);
+  }
 
   public float getX() {
     return x;

@@ -1,6 +1,7 @@
 Ball[] ball = new Ball[2];
 leftPaddle[] left = new leftPaddle[leftPaddle.getPaddleCount()];
 rightPaddle[] right = new rightPaddle[rightPaddle.getPaddleCount()];
+public static int [] scoreNum = new int[2];
 
 
 void setup() {
